@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalo Maestra Karin 2025</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Poppins:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: auto;
+        }
+
+        .bg-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, rgba(255,255,255,0.1) 2px, transparent 2px);
+            background-size: 50px 50px;
+            z-index: 1;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: slideDown 1s ease-out;
+        }
+
+        .title {
+            font-family: 'Fredoka One', cursive;
+            font-size: 3rem;
+            color: #fff;
+            text-shadow: 3px 3px 0px #333, 6px 6px 0px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+            transform: rotate(-2deg);
+        }
+
+        .subtitle {
+            background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3);
+            background-size: 400% 400%;
+            animation: gradientShift 3s ease infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .table-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            animation: slideUp 1s ease-out 0.3s both;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .btn-add {
+            background: linear-gradient(45deg, #00C851, #00A143);
+        }
+
+        .btn-edit {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        th {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: sticky;
+            top: 0;
+        }
+
+        tr:hover {
+            background-color: #f8f9ff;
+            transform: scale(1.01);
+            transition: all 0.3s ease;
+        }
+
+        .summary-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            padding: 25px;
+            color: white;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            animation: slideLeft 1s ease-out 0.6s both;
+        }
+
+        @keyframes slideLeft {
+            from { transform: translateX(50px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        .summary-title {
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+        }
+
+        .stat {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #feca57;
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: white;
+            margin: 10% auto;
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 500px;
+            animation: modalPop 0.3s ease-out;
+        }
+
+        @keyframes modalPop {
+            from { transform: scale(0.7); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group input:focus, .input-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .admin-panel {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .password-input {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .password-input input {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            placeholder-color: rgba(255,255,255,0.7);
+        }
+
+        .password-input input::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .admin-active {
+            border: 3px solid #00C851;
+            box-shadow: 0 0 20px rgba(0,200,81,0.3);
+        }
+
+        .btn-delete {
+            background: linear-gradient(45deg, #ff4757, #ff3838);
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .music-control:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .title {
+                font-size: 2rem;
+            }
+            
+            .controls {
+                justify-content: center;
+            }
+            
+            table {
+                font-size: 14px;
+            }
+            
+            th, td {
+                padding: 10px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-pattern"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Regalo Maestra Karin 2025</h1>
+            <p class="subtitle">🎁 Raccolta Fondi Hip Hop Style 🎁</p>
+        </div>
+
+        <div class="admin-panel">
+            <div class="password-input">
+                <input type="password" id="adminPassword" placeholder="Password Admin (per modificare)">
+                <button class="btn" onclick="toggleAdmin()">🔐 Accedi</button>
+            </div>
+            <div id="adminStatus" style="color: #feca57; font-weight: 600;"></div>
+        </div>
+
+        <div class="main-content">
+            <div class="table-container" id="tableContainer">
+                <div class="controls" id="adminControls" style="display: none;">
+                    <button class="btn btn-add" onclick="showAddModal()">➕ Aggiungi Persona</button>
+                    <button class="btn btn-edit" onclick="showEditModal()">✏️ Modifica</button>
+                </div>
+                
+                <table id="fundraisingTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>👤 Nome</th>
+                            <th id="amountHeader" style="display: none;">💰 Importo</th>
+                            <th id="paymentHeader" style="display: none;">💳 Pagamento</th>
+                            <th id="actionsHeader" style="display: none;">🛠️ Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- I dati verranno inseriti qui -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="summary-card">
+                <h3 class="summary-title">📊 Riepilogo</h3>
+                <div class="stat">
+                    <div class="stat-number" id="totalParticipants">0</div>
+                    <div class="stat-label">Partecipanti</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number" id="totalAmount">€0</div>
+                    <div class="stat-label">Totale Raccolto</div>
+                </div>
+                <div class="stat">
+                    <div style="font-size: 1.1rem; text-align: center; margin-top: 15px;">
+                        🎯 <strong>Obiettivo:</strong><br>
+                        Un regalo speciale per la Maestra Karin!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal per aggiungere persona -->
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('addModal')">&times;</span>
+            <h2>➕ Aggiungi Partecipante</h2>
+            <div class="input-group">
+                <label for="personName">Nome Persona:</label>
+                <input type="text" id="personName" placeholder="Inserisci il nome">
+            </div>
+            <div class="input-group">
+                <label for="personAmount">Importo (€):</label>
+                <input type="number" id="personAmount" placeholder="0.00" step="0.01" min="0">
+            </div>
+            <div class="input-group">
+                <label for="paymentMethod">Metodo di Pagamento:</label>
+                <select id="paymentMethod">
+                    <option value="Contanti">💵 Contanti</option>
+                    <option value="Bonifico">🏦 Bonifico</option>
+                    <option value="PayPal">💳 PayPal</option>
+                    <option value="Satispay">📱 Satispay</option>
+                    <option value="Altro">🤝 Altro</option>
+                </select>
+            </div>
+            <button class="btn btn-add" onclick="addPerson()">Aggiungi</button>
+        </div>
+    </div>
+
+    <!-- Modal per modificare persona -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('editModal')">&times;</span>
+            <h2>✏️ Modifica Partecipante</h2>
+            <div class="input-group">
+                <label for="editPersonName">Nome Persona:</label>
+                <input type="text" id="editPersonName" placeholder="Inserisci il nome">
+            </div>
+            <div class="input-group">
+                <label for="editPersonAmount">Importo (€):</label>
+                <input type="number" id="editPersonAmount" placeholder="0.00" step="0.01" min="0">
+            </div>
+            <div class="input-group">
+                <label for="editPaymentMethod">Metodo di Pagamento:</label>
+                <select id="editPaymentMethod">
+                    <option value="Contanti">💵 Contanti</option>
+                    <option value="Bonifico">🏦 Bonifico</option>
+                    <option value="PayPal">💳 PayPal</option>
+                    <option value="Satispay">📱 Satispay</option>
+                    <option value="Altro">🤝 Altro</option>
+                </select>
+            </div>
+            <button class="btn btn-edit" onclick="updatePerson()">Aggiorna</button>
+        </div>
+    </div>
+
+    <button class="music-control" onclick="toggleMusic()" id="musicBtn">🎵</button>
+
+    <audio id="backgroundMusic" loop>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+    </audio>
+
+    <script>
+        // Dati della raccolta fondi
+        let fundraisingData = [
+            { name: "Mario Rossi", amount: 25.00, payment: "Contanti" },
+            { name: "Giulia Verdi", amount: 30.00, payment: "Bonifico" },
+            { name: "Luca Bianchi", amount: 20.00, payment: "PayPal" }
+        ];
+        
+        let isAdmin = false;
+        let editingIndex = -1;
+        let musicPlaying = false;
+        
+        // Password admin (cambiala con una tua!)
+        const ADMIN_PASSWORD = "karin2025";
+
+        function toggleAdmin() {
+            const password = document.getElementById('adminPassword').value;
+            const status = document.getElementById('adminStatus');
+            
+            if (password === ADMIN_PASSWORD) {
+                isAdmin = true;
+                status.textContent = "✅ Modalità Admin Attiva";
+                document.getElementById('tableContainer').classList.add('admin-active');
+                document.getElementById('adminControls').style.display = 'flex';
+                document.getElementById('amountHeader').style.display = 'table-cell';
+                document.getElementById('paymentHeader').style.display = 'table-cell';
+                document.getElementById('actionsHeader').style.display = 'table-cell';
+            } else {
+                isAdmin = false;
+                status.textContent = "❌ Password Errata";
+                document.getElementById('tableContainer').classList.remove('admin-active');
+                document.getElementById('adminControls').style.display = 'none';
+                document.getElementById('amountHeader').style.display = 'none';
+                document.getElementById('paymentHeader').style.display = 'none';
+                document.getElementById('actionsHeader').style.display = 'none';
+            }
+            
+            updateTable();
+            document.getElementById('adminPassword').value = '';
+        }
+
+        function updateTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            
+            // Ordina i dati alfabeticamente per nome
+            const sortedData = [...fundraisingData].sort((a, b) => 
+                a.name.toLowerCase().localeCompare(b.name.toLowerCase())
+            );
+            
+            sortedData.forEach((person, index) => {
+                const originalIndex = fundraisingData.indexOf(person);
+                const row = tbody.insertRow();
+                row.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td>${person.name}</td>
+                    <td style="display: ${isAdmin ? 'table-cell' : 'none'}">€${person.amount.toFixed(2)}</td>
+                    <td style="display: ${isAdmin ? 'table-cell' : 'none'}">${person.payment}</td>
+                    <td style="display: ${isAdmin ? 'table-cell' : 'none'}">
+                        <button class="btn btn-edit" onclick="editPerson(${originalIndex})">✏️</button>
+                        <button class="btn btn-delete" onclick="deletePerson(${originalIndex})">🗑️</button>
+                    </td>
+                `;
+            });
+            
+            updateSummary();
+        }
+
+        function updateSummary() {
+            const totalParticipants = fundraisingData.length;
+            const totalAmount = fundraisingData.reduce((sum, person) => sum + person.amount, 0);
+            
+            document.getElementById('totalParticipants').textContent = totalParticipants;
+            document.getElementById('totalAmount').textContent = `€${totalAmount.toFixed(2)}`;
+        }
+
+        function showAddModal() {
+            if (!isAdmin) return;
+            document.getElementById('addModal').style.display = 'block';
+        }
+
+        function showEditModal() {
+            if (!isAdmin) return;
+            document.getElementById('editModal').style.display = 'block';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            clearModalInputs();
+        }
+
+        function clearModalInputs() {
+            document.getElementById('personName').value = '';
+            document.getElementById('personAmount').value = '';
+            document.getElementById('paymentMethod').value = 'Contanti';
+            document.getElementById('editPersonName').value = '';
+            document.getElementById('editPersonAmount').value = '';
+            document.getElementById('editPaymentMethod').value = 'Contanti';
+            editingIndex = -1;
+        }
+
+        function addPerson() {
+            const name = document.getElementById('personName').value.trim();
+            const amount = parseFloat(document.getElementById('personAmount').value) || 0;
+            const payment = document.getElementById('paymentMethod').value;
+            
+            if (name === '') {
+                alert('Inserisci un nome valido!');
+                return;
+            }
+            
+            fundraisingData.push({
+                name: name,
+                amount: amount,
+                payment: payment
+            });
+            
+            updateTable();
+            closeModal('addModal');
+        }
+
+        function editPerson(index) {
+            if (!isAdmin) return;
+            
+            editingIndex = index;
+            const person = fundraisingData[index];
+            
+            document.getElementById('editPersonName').value = person.name;
+            document.getElementById('editPersonAmount').value = person.amount;
+            document.getElementById('editPaymentMethod').value = person.payment;
+            
+            showEditModal();
+        }
+
+        function updatePerson() {
+            if (editingIndex === -1) return;
+            
+            const name = document.getElementById('editPersonName').value.trim();
+            const amount = parseFloat(document.getElementById('editPersonAmount').value) || 0;
+            const payment = document.getElementById('editPaymentMethod').value;
+            
+            if (name === '') {
+                alert('Inserisci un nome valido!');
+                return;
+            }
+            
+            fundraisingData[editingIndex] = {
+                name: name,
+                amount: amount,
+                payment: payment
+            };
+            
+            updateTable();
+            closeModal('editModal');
+        }
+
+        function deletePerson(index) {
+            if (!isAdmin) return;
+            
+            if (confirm('Sei sicuro di voler eliminare questo partecipante?')) {
+                fundraisingData.splice(index, 1);
+                updateTable();
+            }
+        }
+
+        function toggleMusic() {
+            const music = document.getElementById('backgroundMusic');
+            const btn = document.getElementById('musicBtn');
+            
+            if (musicPlaying) {
+                music.pause();
+                btn.textContent = '🎵';
+                musicPlaying = false;
+            } else {
+                music.play().catch(e => {
+                    console.log('Audio non disponibile');
+                });
+                btn.textContent = '🔇';
+                musicPlaying = true;
+            }
+        }
+
+        // Chiudi i modal cliccando fuori
+        window.onclick = function(event) {
+            const addModal = document.getElementById('addModal');
+            const editModal = document.getElementById('editModal');
+            
+            if (event.target === addModal) {
+                closeModal('addModal');
+            }
+            if (event.target === editModal) {
+                closeModal('editModal');
+            }
+        }
+
+        // Inizializza la tabella
+        updateTable();
+    </script>
+</body>
+</html>
